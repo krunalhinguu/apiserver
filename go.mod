@@ -1,6 +1,10 @@
 module github.com/rancher/apiserver
 
-go 1.20
+go 1.21
+
+replace (
+	github.com/rancher/wrangler => github.com/krunalhinguu/wrangler v1.29.0-rancher1
+)
 
 require (
 	github.com/ghodss/yaml v1.0.0
@@ -11,8 +15,8 @@ require (
 	github.com/rancher/wrangler v1.1.1-0.20230831050635-df1bd5aae9df
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.8.4
-	k8s.io/apimachinery v0.27.4
-	k8s.io/apiserver v0.27.4
+	k8s.io/apimachinery v0.29.0
+	k8s.io/apiserver v0.29.0
 )
 
 require (
